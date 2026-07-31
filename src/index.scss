@@ -1,0 +1,95 @@
+// Light theme only — intentionally not adaptive to prefers-color-scheme.
+// This is a fixed-identity corporate site: it must always render as a
+// white-background / dark-text business homepage, regardless of the
+// visitor's OS/browser dark-mode setting.
+:root {
+  // Brand navy scale. Keep --navy-900 in sync with BRAND_NAVY in src/theme.ts
+  // (antd's ConfigProvider theme tokens are plain JS and can't read CSS vars).
+  --navy-950: #0a1830;
+  --navy-900: #0f2745;
+  --navy-800: #163a63;
+  --navy-700: #1e4a7d;
+  --maroon: #732727;
+  --slate: #333f4f;
+  --steel: #5b6b82;
+
+  // Text
+  --text: #333333;
+  --text-light: #6b7280;
+  --text-h: #1a1a1a;
+
+  // Surfaces
+  --bg: #ffffff;
+  --bg-alt: #f8f9fa;
+  --border: #e4e7ec;
+
+  // Text/icon color for content sitting on a solid brand-color surface
+  // (e.g. the navy logo chip) — never flips with theme.
+  --on-brand: #ffffff;
+
+  // Accent (unchanged — brand point color)
+  --accent: #c73a3a;
+  --accent-hover: #a92f2f;
+  --accent-bg: rgba(199, 58, 58, 0.08);
+
+  --shadow:
+    rgba(15, 23, 42, 0.08) 0 10px 30px -10px,
+    rgba(15, 23, 42, 0.06) 0 4px 6px -2px;
+  --shadow-sm: rgba(15, 23, 42, 0.06) 0 2px 8px -2px;
+
+  --sans:
+    'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', system-ui, Roboto, 'Malgun Gothic', sans-serif;
+
+  font: 17px/1.65 var(--sans);
+  color-scheme: light;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 640px) {
+    font-size: 15.5px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--sans);
+  font-weight: 700;
+  color: var(--text-h);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: var(--sans);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
