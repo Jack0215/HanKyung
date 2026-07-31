@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://han-kyung.vercel.app/sitemap.xml
