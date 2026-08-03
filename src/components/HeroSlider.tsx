@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Button } from 'antd'
 import { Link } from 'react-router-dom'
-import heroPhoto from '../assets/photos/hero-factory.jpg'
+import heroPhoto from '../assets/photos/hero-skyline.jpg'
 
 const STATS = [
   { value: '2025.11', label: '설립 · 충남 당진 자체공장' },
