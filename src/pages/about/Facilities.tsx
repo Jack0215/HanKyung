@@ -1,6 +1,4 @@
-import { FACILITIES } from '../../data/company'
-import craneImg from '../../assets/photos/facility-crane.jpg'
-import cncImg from '../../assets/photos/facility-cnc.jpg'
+import { FACILITIES, MAIN_EQUIPMENT } from '../../data/company'
 
 function Facilities() {
   return (
@@ -8,9 +6,26 @@ function Facilities() {
       <p className="content-slogan">{FACILITIES.lead}</p>
       <p className="content-body">{FACILITIES.body}</p>
 
-      <div className="facility-photos">
-        <img src={craneImg} alt="당진 공장 내부 천장 크레인 설비" />
-        <img src={cncImg} alt="파이프 가공 설비" />
+      <div className="equipment-card">
+        <img
+          className="equipment-photo"
+          src={MAIN_EQUIPMENT.image}
+          alt={`${MAIN_EQUIPMENT.name} - ${MAIN_EQUIPMENT.en}`}
+        />
+        <div className="equipment-body">
+          <p className="equipment-tag">{MAIN_EQUIPMENT.tag}</p>
+          <h3>{MAIN_EQUIPMENT.name}</h3>
+          <p className="equipment-en">{MAIN_EQUIPMENT.en}</p>
+          <p className="content-body">{MAIN_EQUIPMENT.desc}</p>
+          <dl className="equipment-specs">
+            {MAIN_EQUIPMENT.specs.map((spec) => (
+              <div key={spec.label}>
+                <dt>{spec.label}</dt>
+                <dd>{spec.value}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
       </div>
 
       <h3 className="facility-heading">제조설비</h3>

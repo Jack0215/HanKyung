@@ -737,26 +737,6 @@
   margin-top: 4px;
 }
 
-// ---------- Facilities photos ----------
-.facility-photos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-  margin: 28px 0 36px;
-
-  @media (max-width: 560px) {
-    grid-template-columns: 1fr;
-  }
-
-  img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 12px;
-    border: 1px solid var(--border);
-  }
-}
-
 // ---------- Facilities grid ----------
 .facility-grid {
   list-style: none;
@@ -856,7 +836,6 @@
   border-top: 4px solid var(--navy-900);
   background: var(--bg);
   color: var(--text);
-  margin-top: 56px;
   margin-bottom: 48px;
 
   @media (max-width: 560px) {
@@ -954,6 +933,7 @@
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 0;
+  margin: 28px 0 8px;
   border-radius: 16px;
   border: 1px solid var(--border);
   border-top: 4px solid var(--navy-900);

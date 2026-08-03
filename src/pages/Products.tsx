@@ -1,6 +1,6 @@
 import SectionLayout from '../layouts/SectionLayout'
 import type { SidebarGroup } from '../components/Sidebar'
-import { PRODUCTS, TEE_INTRO, PROCESS_STEPS, MAIN_EQUIPMENT } from '../data/company'
+import { PRODUCTS, TEE_INTRO, PROCESS_STEPS } from '../data/company'
 import lineupPhoto from '../assets/photos/products-lineup.jpg'
 
 const PRODUCTS_NAV: SidebarGroup[] = [
@@ -8,7 +8,6 @@ const PRODUCTS_NAV: SidebarGroup[] = [
     title: '제품카테고리',
     icon: 'box',
     items: [
-      { label: '핵심 설비', to: '#equipment' },
       { label: '배관 이음방식', to: '#joint-types' },
       { label: '설비 유닛', to: '#units' },
       { label: '제작 공정', to: '#process' },
@@ -46,31 +45,6 @@ function Products() {
       lead="현장 조건에 맞는 최적의 접합 방식을 제공합니다"
       sidebarGroups={PRODUCTS_NAV}
     >
-      <section id="equipment" className="product-section">
-        <h2 className="product-section-title">핵심 설비</h2>
-        <div className="equipment-card">
-          <img
-            className="equipment-photo"
-            src={MAIN_EQUIPMENT.image}
-            alt={`${MAIN_EQUIPMENT.name} - ${MAIN_EQUIPMENT.en}`}
-          />
-          <div className="equipment-body">
-            <p className="equipment-tag">{MAIN_EQUIPMENT.tag}</p>
-            <h3>{MAIN_EQUIPMENT.name}</h3>
-            <p className="equipment-en">{MAIN_EQUIPMENT.en}</p>
-            <p className="content-body">{MAIN_EQUIPMENT.desc}</p>
-            <dl className="equipment-specs">
-              {MAIN_EQUIPMENT.specs.map((spec) => (
-                <div key={spec.label}>
-                  <dt>{spec.label}</dt>
-                  <dd>{spec.value}</dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-        </div>
-      </section>
-
       <div className="tee-intro">
         <div className="tee-intro-grid">
           <div>
