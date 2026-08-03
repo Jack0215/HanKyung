@@ -46,23 +46,6 @@ function Products() {
       lead="현장 조건에 맞는 최적의 접합 방식을 제공합니다"
       sidebarGroups={PRODUCTS_NAV}
     >
-      <div className="tee-intro">
-        <div className="tee-intro-grid">
-          <div>
-            <p className="tee-intro-tag">{TEE_INTRO.en}</p>
-            <h2>{TEE_INTRO.title}</h2>
-            <p className="content-body">{TEE_INTRO.desc}</p>
-            <p className="tee-spec">{TEE_INTRO.spec}</p>
-          </div>
-          <img className="tee-intro-photo" src={lineupPhoto} alt="한경방재 분기배관 완제품" />
-        </div>
-        <ul className="tee-advantages">
-          {TEE_INTRO.advantages.map((a) => (
-            <li key={a}>{a}</li>
-          ))}
-        </ul>
-      </div>
-
       <section id="equipment" className="product-section">
         <h2 className="product-section-title">핵심 설비</h2>
         <div className="equipment-card">
@@ -87,6 +70,23 @@ function Products() {
           </div>
         </div>
       </section>
+
+      <div className="tee-intro">
+        <div className="tee-intro-grid">
+          <div>
+            <p className="tee-intro-tag">{TEE_INTRO.en}</p>
+            <h2>{TEE_INTRO.title}</h2>
+            <p className="content-body">{TEE_INTRO.desc}</p>
+            <p className="tee-spec">{TEE_INTRO.spec}</p>
+          </div>
+          <img className="tee-intro-photo" src={lineupPhoto} alt="한경방재 분기배관 완제품" />
+        </div>
+        <ul className="tee-advantages">
+          {TEE_INTRO.advantages.map((a) => (
+            <li key={a}>{a}</li>
+          ))}
+        </ul>
+      </div>
 
       <section id="joint-types" className="product-section">
         <h2 className="product-section-title">배관 이음방식</h2>
