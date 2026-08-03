@@ -1,11 +1,12 @@
 import { COMPANY } from '../data/company'
+import logo from '../assets/logo.png'
 
 function Footer() {
   return (
     <footer className="site-footer">
       <div className="wrap">
         <div className="footer-brand">
-          <span className="brand-mark">H</span>
+          <img src={logo} className="brand-mark" alt="한경방재 로고" />
           <span>
             {COMPANY.nameKo} · 대표 {COMPANY.ceo}
           </span>

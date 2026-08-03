@@ -30,15 +30,9 @@
   margin-right: auto;
 
   .brand-mark {
-    display: grid;
-    place-items: center;
     width: 34px;
     height: 34px;
-    border-radius: 8px;
-    background: var(--navy-900);
-    color: var(--on-brand);
-    font-weight: 800;
-    font-size: 16px;
+    object-fit: contain;
   }
 
   .brand-name {
@@ -1330,13 +1324,8 @@
   color: var(--text-h);
 
   .brand-mark {
-    display: grid;
-    place-items: center;
     width: 28px;
     height: 28px;
-    border-radius: 7px;
-    background: var(--navy-900);
-    color: var(--on-brand);
-    font-size: 13px;
+    object-fit: contain;
   }
 }
