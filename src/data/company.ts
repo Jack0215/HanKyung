@@ -5,6 +5,7 @@ import productGroove from "../assets/photos/product-groove.jpg";
 import productMechanical from "../assets/photos/product-mechanical.jpg";
 import productSpPump from "../assets/photos/product-sppump.jpg";
 import productValve from "../assets/photos/product-valve.jpg";
+import equipmentLaserCutter from "../assets/photos/equipment-laser-cutter.jpg";
 
 export const COMPANY = {
   nameKo: "주식회사 한경방재",
@@ -151,6 +152,22 @@ export const LOCATION = {
     "삽교천방조제 · SK신흥주유소 인근",
   ],
 };
+
+export const MAIN_EQUIPMENT = {
+  tag: "MAIN EQUIPMENT",
+  name: "자동 레이저 컷팅 머신",
+  en: "Tube Laser Cutting Machine",
+  image: equipmentLaserCutter,
+  desc: "원형·각형 파이프를 자동 척킹으로 고정한 뒤 절단부터 홀가공까지 레이저 한 대로 처리하는 한경방재의 핵심 생산설비입니다. 절단면이 매끄럽고 반복 정밀도가 높아 전 규격 분기배관의 균일한 품질을 뒷받침합니다.",
+  specs: [
+    { label: "가공 파이프", value: "원형 ø20 ~ ø210mm · 각형 20×20 ~ 160×160mm" },
+    { label: "절단 두께", value: "탄소강 · 스테인리스 0.5 ~ 10mm" },
+    { label: "레이저 출력", value: "1,000W ~ 4,000W" },
+    { label: "위치 정밀도", value: "±0.03mm (반복 정밀도 동일)" },
+    { label: "최대 이송속도", value: "120m/min" },
+    { label: "대응 단면", value: "원형 · 각형 · 직사각형 · 타원형 · D형 · 육각형" },
+  ],
+}
 
 export const TEE_INTRO = {
   title: "분기배관",
