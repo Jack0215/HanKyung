@@ -1,28 +1,31 @@
-import SectionLayout from '../layouts/SectionLayout'
-import type { SidebarGroup } from '../components/Sidebar'
-import { PRODUCTS, TEE_INTRO, PROCESS_STEPS } from '../data/company'
-import lineupPhoto from '../assets/photos/products-lineup.jpg'
+import SectionLayout from "../layouts/SectionLayout";
+import type { SidebarGroup } from "../components/Sidebar";
+import { PRODUCTS, TEE_INTRO, PROCESS_STEPS } from "../data/company";
+import lineupPhoto from "../assets/photos/products-lineup.jpg";
 
 const PRODUCTS_NAV: SidebarGroup[] = [
   {
-    title: '제품카테고리',
-    icon: 'box',
+    title: "제품카테고리",
+    icon: "box",
     items: [
-      { label: '배관 이음방식', to: '#joint-types' },
-      { label: '설비 유닛', to: '#units' },
-      { label: '제작 공정', to: '#process' },
+      { label: "배관 이음방식", to: "#joint-types" },
+      { label: "설비 유닛", to: "#units" },
+      { label: "제작 공정", to: "#process" },
     ],
   },
-]
+];
 
-const jointProducts = PRODUCTS.filter((p) => p.group === 'joint')
-const unitProducts = PRODUCTS.filter((p) => p.group === 'unit')
+const jointProducts = PRODUCTS.filter((p) => p.group === "joint");
+const unitProducts = PRODUCTS.filter((p) => p.group === "unit");
 
 function ProductCard({ product }: { product: (typeof PRODUCTS)[number] }) {
   return (
     <div className="product-card">
       <div className="product-media">
-        <img src={product.image} alt={product.name} />
+        <img
+          src={product.image}
+          alt={product.name}
+        />
         <span className="product-no">{product.no}</span>
       </div>
       <h3>{product.name}</h3>
@@ -34,7 +37,7 @@ function ProductCard({ product }: { product: (typeof PRODUCTS)[number] }) {
         ))}
       </ul>
     </div>
-  )
+  );
 }
 
 function Products() {
@@ -53,7 +56,11 @@ function Products() {
             <p className="content-body">{TEE_INTRO.desc}</p>
             <p className="tee-spec">{TEE_INTRO.spec}</p>
           </div>
-          <img className="tee-intro-photo" src={lineupPhoto} alt="한경방재 분기배관 완제품" />
+          <img
+            className="tee-intro-photo"
+            src={lineupPhoto}
+            alt="(주)한경방재 분기배관 완제품"
+          />
         </div>
         <ul className="tee-advantages">
           {TEE_INTRO.advantages.map((a) => (
@@ -62,25 +69,40 @@ function Products() {
         </ul>
       </div>
 
-      <section id="joint-types" className="product-section">
+      <section
+        id="joint-types"
+        className="product-section"
+      >
         <h2 className="product-section-title">배관 이음방식</h2>
         <div className="product-grid">
           {jointProducts.map((p) => (
-            <ProductCard product={p} key={p.no} />
+            <ProductCard
+              product={p}
+              key={p.no}
+            />
           ))}
         </div>
       </section>
 
-      <section id="units" className="product-section">
+      <section
+        id="units"
+        className="product-section"
+      >
         <h2 className="product-section-title">설비 유닛</h2>
         <div className="product-grid">
           {unitProducts.map((p) => (
-            <ProductCard product={p} key={p.no} />
+            <ProductCard
+              product={p}
+              key={p.no}
+            />
           ))}
         </div>
       </section>
 
-      <section id="process" className="product-section">
+      <section
+        id="process"
+        className="product-section"
+      >
         <h2 className="product-section-title">제작 공정</h2>
         <ol className="process-list">
           {PROCESS_STEPS.map((step) => (
@@ -95,7 +117,7 @@ function Products() {
         </ol>
       </section>
     </SectionLayout>
-  )
+  );
 }
 
-export default Products
+export default Products;

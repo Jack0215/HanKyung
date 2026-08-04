@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import heroPhoto from "../assets/photos/hero-skyline.jpg";
 
 const STATS = [
-  { value: "2025.11", label: "설립 · 자체공장" },
+  { value: "2025.11", label: "설립 · 본사" },
   { value: "7+", label: "제품 라인업" },
   { value: "280+", label: "프로젝트 시공실적" },
   { value: "KFI · ISO 9001", label: "품질 인증" },
@@ -17,7 +17,7 @@ const SLIDES = [
       <>
         안전한 건축을 완성하는
         <br />
-        분기배관 전문기업, 한경방재
+        분기배관 전문기업, (주)한경방재
       </>
     ),
     lead: "용접·나사·확관·그루브·메카니컬 타입은 물론 SP펌프 UNIT, 밸브장치·헷다까지 제공합니다.",

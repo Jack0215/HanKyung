@@ -16,11 +16,12 @@ function Header() {
           to="/"
           className="brand"
         >
-          <img src={logo} className="brand-mark" alt="한경방재 로고" />
-          <span className="brand-name">
-            (주)
-            {COMPANY.nameShort}
-          </span>
+          <img
+            src={logo}
+            className="brand-mark"
+            alt="(주)한경방재 로고"
+          />
+          <span className="brand-name">{COMPANY.nameShort}</span>
         </Link>
         <nav className="site-nav">
           {NAV_LINKS.map((link) => (

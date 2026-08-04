@@ -8,8 +8,8 @@ import productValve from "../assets/photos/product-valve.jpg";
 import equipmentLaserCutter from "../assets/photos/equipment-laser-cutter.jpg";
 
 export const COMPANY = {
-  nameKo: "주식회사 한경방재",
-  nameShort: "한경방재",
+  nameKo: "(주)한경방재",
+  nameShort: "(주)한경방재",
   nameEn: "HanKyung Bangjae Co., Ltd.",
   ceo: "김석현",
   established: "2025.11.17",
@@ -115,7 +115,7 @@ export const CEO_GREETING = {
     "고객과 함께 성장하는 기업이 되겠습니다.",
     "감사합니다.",
   ],
-  signOff: "주식회사 한경방재 법인설립",
+  signOff: "(주)한경방재 대표 김석현",
 };
 
 export const ORG_CHART = {
@@ -158,7 +158,7 @@ export const MAIN_EQUIPMENT = {
   name: "자동 레이저 컷팅 머신",
   en: "Tube Laser Cutting Machine",
   image: equipmentLaserCutter,
-  desc: "원형·각형 파이프를 자동 척킹으로 고정한 뒤 절단부터 홀가공까지 레이저 한 대로 처리하는 한경방재의 핵심 생산설비입니다. 절단면이 매끄럽고 반복 정밀도가 높아 전 규격 분기배관의 균일한 품질을 뒷받침합니다.",
+  desc: "원형·각형 파이프를 자동 척킹으로 고정한 뒤 절단부터 홀가공까지 레이저 한 대로 처리하는 (주)한경방재의 핵심 생산설비입니다. 절단면이 매끄럽고 반복 정밀도가 높아 전 규격 분기배관의 균일한 품질을 뒷받침합니다.",
   specs: [
     {
       label: "가공 파이프",
