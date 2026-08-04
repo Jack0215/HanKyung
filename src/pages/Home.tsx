@@ -27,14 +27,15 @@ const QUICK_LINKS: {
     en: 'PRODUCTS',
     desc: '분기배관 7종 · 이음방식 · 설비유닛',
   },
-  {
-    to: '/contact',
-    tone: 'slate',
-    icon: 'phone',
-    label: '문의하기',
-    en: 'CONTACT',
-    desc: '견적문의 · 제품문의 · 기술상담',
-  },
+  // 문의하기 페이지 임시 비활성화 (추후 사용 예정)
+  // {
+  //   to: '/contact',
+  //   tone: 'slate',
+  //   icon: 'phone',
+  //   label: '문의하기',
+  //   en: 'CONTACT',
+  //   desc: '견적문의 · 제품문의 · 기술상담',
+  // },
 ]
 
 function Home() {

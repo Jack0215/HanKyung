@@ -77,9 +77,11 @@ function HeroSlider() {
               제품 카테고리 보기
             </Button>
           </Link>
+          {/* 문의하기 페이지 임시 비활성화 (추후 사용 예정)
           <Link to="/contact">
             <Button size="large">문의하기</Button>
           </Link>
+          */}
         </div>
         <div className="hero-dots">
           {SLIDES.map((s, i) => (

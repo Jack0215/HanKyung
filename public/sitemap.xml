@@ -3,5 +3,5 @@
   <url><loc>https://han-kyung.vercel.app/</loc></url>
   <url><loc>https://han-kyung.vercel.app/about</loc></url>
   <url><loc>https://han-kyung.vercel.app/products</loc></url>
-  <url><loc>https://han-kyung.vercel.app/contact</loc></url>
+  <!-- 문의하기 페이지 임시 비활성화로 제외 (추후 재추가 예정) -->
 </urlset>

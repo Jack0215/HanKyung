@@ -9,7 +9,7 @@ import Organization from './pages/about/Organization'
 import Facilities from './pages/about/Facilities'
 import Location from './pages/about/Location'
 import Products from './pages/Products'
-import Contact from './pages/Contact'
+// import Contact from './pages/Contact' // 문의하기 페이지 임시 비활성화 (추후 사용 예정)
 import './App.scss'
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
           <Route path="location" element={<Location />} />
         </Route>
         <Route path="products" element={<Products />} />
-        <Route path="contact" element={<Contact />} />
+        {/* <Route path="contact" element={<Contact />} /> 문의하기 페이지 임시 비활성화 (추후 사용 예정) */}
       </Route>
     </Routes>
   )

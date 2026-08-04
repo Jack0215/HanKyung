@@ -5,7 +5,7 @@ import logo from "../assets/logo.png";
 const NAV_LINKS = [
   { to: "/about", label: "회사소개" },
   { to: "/products", label: "제품카테고리" },
-  { to: "/contact", label: "문의하기" },
+  // { to: "/contact", label: "문의하기" }, // 문의하기 페이지 임시 비활성화 (추후 사용 예정)
 ];
 
 function Header() {
