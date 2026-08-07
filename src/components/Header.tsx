@@ -39,9 +39,11 @@ function Header() {
           href={COMPANY.telHref}
         >
           <span
-            className="dot"
+            className="header-tel-icon"
             aria-hidden="true"
-          />
+          >
+            📞
+          </span>
           {COMPANY.tel}
         </a>
       </div>

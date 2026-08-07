@@ -17,8 +17,10 @@ function Footer() {
         </div>
         <p>{COMPANY.addressShort}</p>
         <p>
-          TEL {COMPANY.tel} · FAX {COMPANY.fax} · 사업자등록번호{" "}
-          {COMPANY.bizRegNo}
+          TEL {COMPANY.tel} · FAX {COMPANY.fax} ·{" "}
+          <span className="biz-reg-no">
+            사업자등록번호 {COMPANY.bizRegNo}
+          </span>
         </p>
         <p className="copyright">
           © 2026 {COMPANY.nameEn} All rights reserved.
