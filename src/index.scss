@@ -29,9 +29,15 @@
   --accent-bg: rgba(199, 58, 58, 0.08);
 
   --shadow:
-    rgba(15, 23, 42, 0.08) 0 10px 30px -10px,
-    rgba(15, 23, 42, 0.06) 0 4px 6px -2px;
-  --shadow-sm: rgba(15, 23, 42, 0.06) 0 2px 8px -2px;
+    rgba(15, 23, 42, 0.1) 0 16px 36px -12px,
+    rgba(15, 23, 42, 0.06) 0 4px 10px -4px;
+  --shadow-sm:
+    rgba(15, 23, 42, 0.06) 0 2px 6px -1px,
+    rgba(15, 23, 42, 0.04) 0 8px 20px -8px;
+  --shadow-lift:
+    rgba(15, 23, 42, 0.14) 0 24px 48px -16px,
+    rgba(15, 23, 42, 0.08) 0 6px 14px -4px;
+  --brand-gradient: linear-gradient(135deg, var(--navy-800), var(--navy-950));
 
   --sans:
     'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont,

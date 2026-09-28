@@ -43,38 +43,48 @@ function Home() {
     <>
       <HeroSlider />
 
-      <section className="quick-links">
-        {QUICK_LINKS.map((link) => (
-          <Link to={link.to} key={link.to} className={`quick-link tone-${link.tone}`}>
-            <Icon name={link.icon} />
-            <p className="quick-link-en">{link.en}</p>
-            <h3>{link.label}</h3>
-            <p className="quick-link-desc">{link.desc}</p>
-            <span className="quick-link-arrow" aria-hidden="true">
-              →
-            </span>
-          </Link>
-        ))}
-      </section>
-
-      <section className="home-info">
-        <div className="wrap home-info-grid">
-          <div className="info-box">
-            <p className="info-box-tag">CEO MESSAGE</p>
-            <h3>대표인사말</h3>
-            <p className="info-box-body">{CEO_GREETING.headline}</p>
-            <Link to="/about" className="info-box-more">
-              더 보기 →
-            </Link>
+      <section className="home-highlights">
+        <div className="wrap">
+          <div className="quick-links">
+            {QUICK_LINKS.map((link) => (
+              <Link to={link.to} key={link.to} className={`quick-link tone-${link.tone}`}>
+                <span className="quick-link-icon">
+                  <Icon name={link.icon} />
+                </span>
+                <p className="quick-link-en">{link.en}</p>
+                <h3>{link.label}</h3>
+                <p className="quick-link-desc">{link.desc}</p>
+                <span className="quick-link-arrow" aria-hidden="true">
+                  →
+                </span>
+              </Link>
+            ))}
           </div>
-          <div className="info-box">
-            <p className="info-box-tag">LOCATION</p>
-            <h3>찾아오시는 길</h3>
-            <p className="info-box-body">{LOCATION.address}</p>
-            <p className="info-box-tel">TEL {COMPANY.tel}</p>
-            <Link to="/about/location" className="info-box-more">
-              자세히 보기 →
-            </Link>
+
+          <div className="home-info-grid">
+            <div className="info-box">
+              <span className="info-box-icon">
+                <Icon name="message" />
+              </span>
+              <p className="info-box-tag">CEO MESSAGE</p>
+              <h3>대표인사말</h3>
+              <p className="info-box-body">{CEO_GREETING.headline}</p>
+              <Link to="/about" className="info-box-more">
+                더 보기 →
+              </Link>
+            </div>
+            <div className="info-box">
+              <span className="info-box-icon">
+                <Icon name="map-pin" />
+              </span>
+              <p className="info-box-tag">LOCATION</p>
+              <h3>찾아오시는 길</h3>
+              <p className="info-box-body">{LOCATION.address}</p>
+              <p className="info-box-tel">TEL {COMPANY.tel}</p>
+              <Link to="/about/location" className="info-box-more">
+                자세히 보기 →
+              </Link>
+            </div>
           </div>
         </div>
       </section>

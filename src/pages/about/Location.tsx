@@ -1,20 +1,19 @@
+import Icon from '../../components/Icon'
 import { COMPANY, LOCATION } from '../../data/company'
+
+const NAVER_MAP_URL = `https://map.naver.com/p/search/${encodeURIComponent(COMPANY.addressFull)}`
 
 function Location() {
   return (
     <div className="content-card">
-      <div className="map-illustration" aria-hidden="true">
-        <svg viewBox="0 0 400 220" role="presentation">
-          <rect width="400" height="220" fill="var(--bg-alt)" />
-          <path d="M0 150 H400" stroke="var(--border)" strokeWidth="14" />
-          <path d="M180 0 V220" stroke="var(--border)" strokeWidth="10" />
-          <circle cx="180" cy="150" r="9" fill="var(--accent)" />
-          <path
-            d="M180 150 c0 -22 -22 -20 -22 -40 a22 22 0 1 1 44 0 c0 20 -22 18 -22 40Z"
-            fill="var(--navy-900)"
-            transform="translate(0 -46)"
-          />
-        </svg>
+      <div className="map-card">
+        <span className="map-card-icon">
+          <Icon name="map-pin" />
+        </span>
+        <p className="map-card-address">{LOCATION.address}</p>
+        <a className="map-card-link" href={NAVER_MAP_URL} target="_blank" rel="noopener noreferrer">
+          네이버 지도에서 길찾기 →
+        </a>
       </div>
       <dl className="location-info">
         <div>

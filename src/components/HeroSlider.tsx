@@ -96,7 +96,7 @@ function HeroSlider() {
         </div>
         <dl className="hero-stats">
           {STATS.map((stat) => (
-            <div key={stat.label}>
+            <div className="hero-stat" key={stat.label}>
               <dt>{stat.value}</dt>
               <dd>{stat.label}</dd>
             </div>
